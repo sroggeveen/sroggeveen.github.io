@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css demo</title>
+
+    <style>
+        body {
+            background-color: pink;
+        }
+        
+        #red-text {
+            color: red;
+        }
+        
+        #blue-text {
+            color: blue;
+        }
+        
+        #small-text {
+            font-size: smaller
+        }
+        
+        #big-text {
+            font-size: larger
+        }
+        
+        #combined-text {
+            font-size: 24px;
+            color: orange;
+            text-align: center;
+        }
+        
+        #blue2-text {
+            color: blue
+        }
+        
+        #table1 {
+            border: 1px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Some HTML Stuff First.</h1>
+    <ul>
+        <li>this is an unordered list!</li>
+        <li>so is this!</li>
+        <li>yay!</li>
+    </ul>
+
+    <ol>
+        <li>this is an ordered list!</li>
+        <li>so is this!</li>
+        <li>wow!</li>
+        <!--this is how you do a comment!-->
+    </ol>
+
+    <table id="table1">
+        <tr>
+            <th>First name</th>
+            <th>Middle name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>Sienna</td>
+            <td>Lulu/Kim</td>
+            <td>Roggeveen</td>
+        </tr>
+        <tr>
+            <td>Katherine</td>
+            <td>Faith</td>
+            <td>Denney</td>
+        </tr>
+    </table>
+
+    <h2>Let's do some internal CSS.</h2>
+    <p style="color:aqua;">I want this text to be blue.</p>
+    <p style="color:red;">I want this text to be red.</p>
+    <p style="font-size:xx-large;">I want this text to be really big.</p>
+    <p style="font-size:xx-small;">I want this text to be really small.</p>
+    <p style="font-size:24px;color:orange; text-align:center;">I want this text to be orange, 24px and centered.</p>
+
+    <h3>Let's do some internal css with selectors.</h3>
+    <p id="blue-text">Make this blue.</p>
+    <p id="red-text">Make this red.</p>
+    <p id="small-text">Make this small</p>
+    <p id="big-text">Make this big.</p>
+    <p id="combined-text">Make this orange, 24px and centered.</p>
+    <p class="blue2-text">Make this text blue using classes (you can use classes more than once).</p>
+</body>
+
+</html>
