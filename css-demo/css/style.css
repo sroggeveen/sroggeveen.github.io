@@ -1,0 +1,35 @@
+.div1 {
+    background-color: rgb(232, 247, 247);
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px double black;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(241, 173, 173);
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: lightcoral
+}
+
+.active {
+    background-color: lightpink;
+}

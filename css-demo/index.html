@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css demo</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         body {
-            background-color: pink;
+            background-color: rgb(243, 217, 222);
         }
         
         #red-text {
@@ -46,52 +48,66 @@
 </head>
 
 <body>
-    <h1>Some HTML Stuff First.</h1>
-    <ul>
-        <li>this is an unordered list!</li>
-        <li>so is this!</li>
-        <li>yay!</li>
-    </ul>
 
-    <ol>
-        <li>this is an ordered list!</li>
-        <li>so is this!</li>
-        <li>wow!</li>
-        <!--this is how you do a comment!-->
-    </ol>
+    <div class="div1">
 
-    <table id="table1">
-        <tr>
-            <th>First name</th>
-            <th>Middle name</th>
-            <th>Last name</th>
-        </tr>
-        <tr>
-            <td>Sienna</td>
-            <td>Lulu/Kim</td>
-            <td>Roggeveen</td>
-        </tr>
-        <tr>
-            <td>Katherine</td>
-            <td>Faith</td>
-            <td>Denney</td>
-        </tr>
-    </table>
+        <ul class="nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
 
-    <h2>Let's do some internal CSS.</h2>
-    <p style="color:aqua;">I want this text to be blue.</p>
-    <p style="color:red;">I want this text to be red.</p>
-    <p style="font-size:xx-large;">I want this text to be really big.</p>
-    <p style="font-size:xx-small;">I want this text to be really small.</p>
-    <p style="font-size:24px;color:orange; text-align:center;">I want this text to be orange, 24px and centered.</p>
+        <body>
+            <h1>Some HTML Stuff First.</h1>
+            <ul>
+                <li>this is an unordered list!</li>
+                <li>so is this!</li>
+                <li>yay!</li>
+            </ul>
 
-    <h3>Let's do some internal css with selectors.</h3>
-    <p id="blue-text">Make this blue.</p>
-    <p id="red-text">Make this red.</p>
-    <p id="small-text">Make this small</p>
-    <p id="big-text">Make this big.</p>
-    <p id="combined-text">Make this orange, 24px and centered.</p>
-    <p class="blue2-text">Make this text blue using classes (you can use classes more than once).</p>
-</body>
+            <ol>
+                <li>this is an ordered list!</li>
+                <li>so is this!</li>
+                <li>wow!</li>
+                <!--this is how you do a comment!-->
+            </ol>
+
+            <table id="table1">
+                <tr>
+                    <th>First name</th>
+                    <th>Middle name</th>
+                    <th>Last name</th>
+                </tr>
+                <tr>
+                    <td>Sienna</td>
+                    <td>Lulu/Kim</td>
+                    <td>Roggeveen</td>
+                </tr>
+                <tr>
+                    <td>Katherine</td>
+                    <td>Faith</td>
+                    <td>Denney</td>
+                </tr>
+            </table>
+
+            <h2>Let's do some internal CSS.</h2>
+            <p style="color:aqua;">I want this text to be blue.</p>
+            <p style="color:red;">I want this text to be red.</p>
+            <p style="font-size:xx-large;">I want this text to be really big.</p>
+            <p style="font-size:xx-small;">I want this text to be really small.</p>
+            <p style="font-size:24px;color:orange; text-align:center;">I want this text to be orange, 24px and centered.</p>
+
+            <h3>Let's do some internal css with selectors.</h3>
+            <p id="blue-text">Make this blue.</p>
+            <p id="red-text">Make this red.</p>
+            <p id="small-text">Make this small</p>
+            <p id="big-text">Make this big.</p>
+            <p id="combined-text">Make this orange, 24px and centered.</p>
+            <p class="blue2-text">Make this text blue using classes (you can use classes more than once).</p>
+    </div>
+    </body>
 
 </html>
