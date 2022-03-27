@@ -30,14 +30,6 @@ ul.nav li a:hover {
     background-color: rgba(240, 128, 128, 0.74)
 }
 
-.background {
-    background-color: rgb(237, 243, 243);
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 10px double black;
-}
-
 .center {
     display: block;
     margin-left: auto;
