@@ -12,10 +12,11 @@ ul.nav {
     padding: 0;
     overflow: hidden;
     background-color: rgba(241, 173, 173, 0.582);
+    text-align: center;
 }
 
 ul.nav li {
-    float: left;
+    display: inline-block;
 }
 
 ul.nav li a {
