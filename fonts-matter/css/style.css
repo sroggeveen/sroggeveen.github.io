@@ -1,0 +1,17 @@
+.std {
+    font-family: parisplus-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.clair {
+    font-family: parisplus-clair, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gris {
+    font-family: parisine-plus-std-gris, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
