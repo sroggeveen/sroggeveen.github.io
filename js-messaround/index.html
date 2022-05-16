@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+</head>
+<style>
+    #ex {
+        border: 5px solid lightcoral;
+    }
+</style>
+
+<body>
+
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank" onclick="alert('Warning! you are navigating away from my page!')">go to my school's website.</a>
+    <!--challenge 1 - add own link with alert-->
+
+    <br>
+
+    <a href="https://eastsideprep.instructure.com/calendar#view_name=agenda&view_start=2021-09-03" target="_blank" onclick="alert('Warning! you are navigating away from my page!')"> go to Canvas!</a>
+
+    <h2>How do I change HTML content with javascript?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret') .innerHTML='nana nana nana nana batman'; document.getElementById('secret').style.display='block'">reveal!</button>
+    <button onclick="document.getElementById('secret') .style.display='none'">hide</button>
+
+    <!--challenge 2 - make your own two truths and a lie-->
+    <ol>
+        <li>I have a younger sister.</li>
+        <li>I have played piano for 5 years.</li>
+        <li>I overflowed the bathtub when I was 7.</li>
+    </ol>
+    <p id="lie"></p>
+    <button onclick="document.getElementById('lie') .innerHTML='2 is the lie! I have actually played for 11!'; document.getElementById('lie').style.display='block'">reveal!</button>
+    <button onclick="document.getElementById('lie') .style.display='none'">hide</button>
+
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/pic_bulboff.gif" alt="bulb off" id="bulb">
+    <br>
+    <button onclick="document.getElementById('bulb') .src='images/pic_bulbon.gif'">Turn on light</button>
+    <!--challenge 3 - figure out how to turn the light off-->
+    <button onclick="document.getElementById('bulb') .src='images/pic_bulboff.gif'">Turn off light</button>
+
+    <h2>How do we change css styles with functions?</h2>
+    <p id="alice">Hi, I am Alice</p>
+    <button onclick="shrinkAlice()">Cake: eat me</button>
+    <!--challenge 4 - implement drink me: increase font size and change color-->
+    <button onclick="growAlice()">Potion: drink me</button>
+
+    <script>
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'blue'
+            aliceParagraph.style.fontSize = '10px'
+        }
+
+        function growAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'red'
+            aliceParagraph.style.fontSize = '30px'
+        }
+    </script>
+
+    <div>
+        <h2 id="ex">Buttons not covered in class:</h2>
+    </div>
+
+    <button onclick="border()">Change the border!</button>
+    <script>
+        function border() {
+            document.getElementById("ex").style.borderRadius = "25px";
+        }
+    </script>
+
+    <button onclick="background()">Change the background!</button>
+
+    <script>
+        function background() {
+            document.body.style.background = "lightcyan";
+        }
+    </script>
+
+
+</body>
+
+</html>
