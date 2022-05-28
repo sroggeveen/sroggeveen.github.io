@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <div class="div">
+        <h1 class="title">The Queen Anne Dispatch</h1>
+
+        <div class="grid-container">
+            <div class="grid-item navmenu">
+                <div class="div-nav">
+
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-item main-image">
+            </div>
+
+            <div class="grid-item main1">
+
+            </div>
+
+
+            <div class="grid-item support1">
+            </div>
+            <div class="grid-item support2">
+            </div>
+            <div class="grid-item main2">
+            </div>
+            <div class="grid-item sidenav">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
