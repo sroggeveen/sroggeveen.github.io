@@ -36,6 +36,41 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <style>
+        .mailboxes {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+            border: 5px solid black;
+        }
+        
+        .photo {
+            grid-row: 2;
+            grid-column: 3;
+            border: 5px solid black;
+        }
+        
+        .mailbox {
+            width: 250px;
+            border: 5px solid black;
+        }
+        
+        .general {
+            grid-row: 3;
+            grid-column: 2 / span 2;
+            border: 5px solid black;
+        }
+        
+        .image {
+            width: 250px;
+            border: 5px solid black;
+        }
+        
+        .supplies {
+            grid-row: 3;
+            grid-column: 1;
+            border: 5px solid black;
+        }
+    </style>
 </head>
 
 <link rel="stylesheet" href="css/style.css">
@@ -50,7 +85,7 @@
                 <div class="div-nav">
 
                     <ul class="nav">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -70,21 +105,53 @@
                 </div>
             </div>
 
-            <div class="grid-item main-image">
+            <div class="grid-item mailboxes">
+                <h1 class="bold">Private Mailboxes</h1>
+                <p>Small office and home business operators have used private mailboxes for decades to help manage their business. Private citizens use them for safety, security, and convenience.</p>
+                <ul>
+                    <li><span class="bold">Package Receiving </span>— we can accept packages and mail from the Post Office, UPS, FedEx, & DHL—never miss a delivery again!</li>
+                    <li><span class="bold">Mail Forwarding</span>— do you travel and fret about your mail piling up? We can forward it to you overnight, weekly, bi-weekly, monthly, or on demand.</li>
+                    <li><span class="bold">Anonymity & Privacy</span> — your personal information is safe with us.</li>
+                </ul>
             </div>
 
-            <div class="grid-item main1">
-
+            <div class="grid-item photo">
+                <br>
+                <br>
+                <p></p>
+                <img src="images/services.JPG" alt="mailboxes" class="mailbox">
             </div>
 
+            <div class="grid-item general">
+                <h1 class="bold">General/Specialty Shipping</h1>
+                <p>We ship all UPS parcel services. DHL expedited international services only.</p>
+                <ul>
+                    <li class="small">Postal Services</li>
+                    <li class="small">Postage stamps</li>
+                    <li class="small">First Class Mail</li>
+                    <li class="small">Priority Mail</li>
+                    <li class="small">International Mail</li>
+                    <li class="small">Postal Insurance</li>
+                    <li class="small">Certified Mail</li>
+                    <li class="small">Return Recipt Requested</li>
+                    <li class="small">Delivery Confirmation</li>
+                    <li class="small">Large mail metering</li>
+                    <li class="small">Bulk mail & presort services</li>
+                    <li class="small">Domestic fax sending</li>
+                    <li class="small">Fax recieving</li>
+                    <li class="small">Copy services</li>
+                    <li class="small">Scanning services</li>
+                    <li class="small">Notary Public</li>
+                    <li class="small">Gift wrap</li>
+                </ul>
+                <p>We offer the postal products and services you need, but without the long wait in line— and you can be certain we’re always happy to see you. </p>
+            </div>
+            <div class="grid-item supplies">
+                <p class="bold">Packaging Supplies</p>
+                <p>We sell a variety of new and recycled packaging materials for all your packing needs. Let us take care of the legwork, from fragile heirlooms to awkward shapes and sizes - we know how to get your most treasured items to their destination
+                    safely. </p>
+                <img src="images/ship.jpg" alt="mail" class="image">
 
-            <div class="grid-item support1">
-            </div>
-            <div class="grid-item support2">
-            </div>
-            <div class="grid-item main2">
-            </div>
-            <div class="grid-item sidenav">
             </div>
 
         </div>

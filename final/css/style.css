@@ -53,8 +53,14 @@ ul.nav li a:hover {
     background-color: rgba(236, 236, 236);
 }
 
+.nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .div {
-    width: 1100px;
+    width: 900px;
     margin: 0px auto;
     padding: 50px;
     border-radius: 20px;
@@ -93,10 +99,6 @@ p {
     font-size: 20px
 }
 
-.active {
-    color: rgba(236, 236, 236);
-}
-
 .bold {
     font-family: bicyclette, sans-serif;
     font-weight: 700;
@@ -115,7 +117,24 @@ p {
     text-align: center;
     font-size: xxx-large;
     color: white;
+    -webkit-text-stroke: 2.5px rgba(120, 180, 185);
     font-family: bicyclette, sans-serif;
     font-weight: 700;
+    font-style: unset;
+}
+
+li {
+    font-family: bicyclette, sans-serif;
+    font-weight: 300;
     font-style: normal;
+    font-size: 20px
+}
+
+.small {
+    font-size: 20px;
+}
+
+.links {
+    font-size: 18px;
+    color: rgba(120, 180, 185);
 }

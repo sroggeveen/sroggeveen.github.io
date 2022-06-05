@@ -36,6 +36,39 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <style>
+        .contact {
+            grid-row: 2;
+            grid-column: 1;
+            border: 5px solid black;
+        }
+        
+        .contactp {
+            grid-row: 2;
+            grid-column: 2 / span 2;
+            border: 5px solid black;
+        }
+        
+        .contact-photo {
+            width: 570px;
+        }
+        
+        .address {
+            grid-row: 3;
+            grid-column: 3;
+            border: 5px solid black;
+        }
+        
+        .map {
+            grid-row: 3;
+            grid-column: 1/ span 2;
+            border: 5px solid black;
+        }
+        
+        .mapp {
+            width: 400px;
+        }
+    </style>
 </head>
 
 <link rel="stylesheet" href="css/style.css">
@@ -50,7 +83,7 @@
                 <div class="div-nav">
 
                     <ul class="nav">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -63,14 +96,48 @@
                             <a href="blog.html">Blog</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html" class="active">Contact</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
 
+            <div class="grid-item contact">
+                <h1 class="bold">Contact</h1>
+                <p>Shoot us an email, give us a call, or stop by anytime. We would love to help you find the right gift, shipping solution, or just to say hello.</p>
+            </div>
+
+            <div class="grid-item contactp">
+                <img src="images/contact.JPG" alt="contact" class="contact-photo">
+            </div>
+
+            <div class="grid-item address">
+                <h1 class="bold">How to Reach us!</h1>
+                <p><span class="bold">Address - </span>2212 QUEEN ANNE AVENUE NORTH; SEATTLE, WA, 98109</p>
+                <p><span class="bold">Phone Number - </span>206.286.1024</p>
+                <p><span class="bold">Email - </span><a href="mailto:queenannedispatch@gmail.com" class="links">queenannedispatch@gmail.com</a></p>
+                <p id="forwarding"></p>
+                <button onclick="document.getElementById('forwarding') .innerHTML='queenannemail@earthlink.net'; document.getElementById('forwarding').style.display='block'">Mail Forwarding Email</button>
+                <button onclick="document.getElementById('forwarding') .style.display='none'">Hide</button>
+                <p><span class="bold">Instagram - </span><a href="https://www.instagram.com/queenannedispatch/" class="links">@queenannedispatch</a></p>
+                <p><span class="bold">Facebook - </span><a href="https://www.facebook.com/QueenAnneDispatch/?fref=ts" class="links">@QueenAnneDispatch</a></p>
+
+            </div>
+
+            <div class="grid-item map">
+                <h1 class="bold">Map</h1>
+                <img src="images/map.JPG" alt="big map" id="map0">
+                <br>
+                <button onclick="document.getElementById('map0') .src='images/map.JPG'">See Far</button>
+                <button onclick="document.getElementById('map0') .src='images/small-map.JPG'">See Close</button>
+            </div>
+
+
+
         </div>
+
+
 
     </div>
 </body>

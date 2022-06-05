@@ -42,23 +42,33 @@
 
     <style>
         .main-carousel {
-            grid-row: 2;
+            grid-row: 3;
             grid-column: 1 / span 3;
+            border: 5px solid black;
         }
         
         .intro {
-            grid-row: 1;
+            grid-row: 2;
             grid-column: 1 / span 3;
+            border: 5px solid black;
         }
         
         .story {
             grid-row: 4;
             grid-column: 1 / span 2;
+            border: 5px solid black;
         }
         
         .story-pic {
             grid-row: 4;
             grid-column: 3;
+            border: 5px solid black;
+        }
+        
+        .story2 {
+            grid-row: 5;
+            grid-column: 1 /span 3;
+            border: 5px solid black;
         }
     </style>
 </head>
@@ -67,16 +77,17 @@
 
 <body>
 
-
+    <br>
     <div class="div">
+        <br>
         <h1 class="title">The Queen Anne Dispatch</h1>
-
+        <br>
         <div class="grid-container">
             <div class="grid-item navmenu">
                 <div class="div-nav">
 
                     <ul class="nav">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -95,77 +106,80 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="grid-item intro">
-            <p>Queen Anne Dispatch is your neighborhood one stop shopping and shipping location. Often referred to as “your neighborhood Concierge”, you would be surprised at the services we offer. If you need something, or need to have something done, stop
-                on by. Chances are, if we don’t, we can sure help you find someone who does. Queen Anne Dispatch’s goal is to be able to offer more to its customers and constantly evolve to better serve our community.
-            </p>
-        </div>
-        <div class="grid-item main-carousel">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/outside.jpg" alt="outside" class="d-block w-100">
+            <div class="grid-item intro">
+                <h1 class="bold">About</h1>
+                <p>Queen Anne Dispatch is your neighborhood one stop shopping and shipping location. Often referred to as “your neighborhood Concierge”, you would be surprised at the services we offer. If you need something, or need to have something done,
+                    stop on by. Chances are, if we don’t, we can sure help you find someone who does. Queen Anne Dispatch’s goal is to be able to offer more to its customers and constantly evolve to better serve our community.
+                </p>
+            </div>
+            <div class="grid-item main-carousel">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/outside.jpg" alt="outside" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/inside.jpg" alt="inside" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/jars.jpg" alt="jars" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/mail.jpg" alt="mail" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/paper.jpg" alt="paper" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/stationary.jpg" alt="stationary" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/tags.jpg" alt="tags" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/mail.jpg" alt="mail" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/cards.jpg" alt="cards" class="d-block w-100">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/inside.jpg" alt="inside" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/jars.jpg" alt="jars" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/mail.jpg" alt="mail" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/paper.jpg" alt="paper" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/stationary.jpg" alt="stationary" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/tags.jpg" alt="tags" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="images/mail.jpg" alt="mail" class="d-block w-100">
-                    </div>
+
+                    <!--carousel controls-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                 </div>
 
-                <!--carousel controls-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
             </div>
-
-
             <div class="grid-item story">
                 <h2 class="bold">Our Story</h2>
                 <p>Queen Anne Mail and Dispatch was founded in 1987 by Jan Paolini. The business originated from her experience in the moving industry and her perception of what the local residents of Queen Anne needed at that time. Her idea took off and
                     sprouted from a small, personal mailbox/shipping/office center into what is today Queen Anne Dispatch. Currently located in what once was a independent grocer that her daughters bought penny candy at has become a community gathering
                     point serving many of the neighborhood needs.
                 </p>
+
+            </div>
+            <div class="grid-item story-pic">
+                <br>
+                <br>
+
+                <img src="images/story.JPG" alt="story" style="width:240px; display: block; margin-left: auto; margin-right:auto;">
+            </div>
+
+            <div class="grid-item story2">
                 <p>Over the years, those two daughters worked at the store and many of the customers watched them grow up. In 2006 Jan retired and the daughters, Sabrina and Tara took over the business. Sabrina’s experience in the fashion industry has helped
                     her expand the business to include an amazing assortment of apparel, jewelry and gift items. She is constantly updating the merchandise and filling the store with unique, price conscious and eco friendly items. Tara has worked hard
                     to grow the shipping side of the business, and expand the services offered to the ever growing and changing needs of our customer base.
-
                 </p>
                 <p>Having both grown up in the neighborhood, they continue to be actively involved in the community. The Upper Queen Anne Merchants Association, and Queen Anne Community Center, The Helpline, and Queen Anne Elementary are all areas of support.
-
                 </p>
-
-            </div>
-            <div class="story-pic">
-                <img src="images/story.JPG" alt="story">
             </div>
 
 
         </div>
 
 
-
     </div>
-
-
-
 
 </body>
 
