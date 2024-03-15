@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-animation</title>
+
+    <style>
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: lightsalmon;
+            margin: 200px auto;
+            /* center it*/
+            animation-name: square-to-circle;
+            /* name the animation*/
+            animation-duration: 2s;
+            /* how long it goes*/
+            animation-delay: 0.5s;
+            /* how long until it starts again*/
+            animation-iteration-count: infinite;
+            /* goes on forever*/
+            animation-timing-function: linear;
+            /* smooth*/
+            animation-direction: alternate;
+            /* square to circle and back to square*/
+        }
+        
+        @keyframes square-to-circle {
+            0% {
+                border-radius: 0;
+                background: lightsalmon;
+                transform: rotate(0deg);
+            }
+            50% {
+                border-radius: 50%, 50% 0 0;
+                background: lightsalmon;
+                transform: rotate(90deg);
+            }
+            75% {
+                border-radius: 50% 50% 50% 0;
+                background: lightsalmon;
+                transform: rotate(135deg);
+            }
+            100% {
+                border-radius: 50%;
+                background: lightsalmon;
+                transform: rotate(180deg);
+            }
+        }
+        
+        .slide {
+            width: 300px;
+            height: 300px;
+            background: lightblue;
+            border-radius: 50%;
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes slide {
+            from {
+                margin-left: 0px;
+            }
+            95% {
+                margin-left: 900px;
+            }
+            to {
+                margin-left: 0px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="square"></div>
+
+        <div class="slide"></div>
+    </body>
+
+</head>
+
+</html>
