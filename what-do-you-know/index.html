@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    .introduction {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        border: 3px solid rgba(255, 218, 185);
+        background-color: white;
+    }
+    
+    .fam-description {
+        grid-row: 3;
+        grid-column: 1/ span 2;
+        border: 3px solid rgba(255, 218, 185);
+        background-color: white;
+    }
+    
+    .carousel-family {
+        grid-row: 3;
+        grid-column: 3/span 1;
+        border: 3px solid rgba(255, 218, 185);
+        background-color: white;
+    }
+    
+    .friends-description {
+        grid-row: 4;
+        grid-column: 2/span 2;
+        border: 3px solid rgba(255, 218, 185);
+        background-color: white;
+    }
+    
+    .carousel-friends {
+        grid-row: 4;
+        grid-column: 1/ span 1;
+        border: 3px solid rgba(255, 218, 185);
+        background-color: white;
+    }
+</style>
+
+<body>
+
+    <div class="div">
+
+        <h1 class="title">All About Me</h1>
+
+        <div class="grid-container">
+            <div class="grid-item navmenu">
+                <div class="div-nav">
+
+                    <ul class="nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="activities.html">Activities</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-item introduction">
+                <p>introduction</p>
+            </div>
+
+            <div class="grid-item fam-description">
+                <p>my family</p>
+            </div>
+
+            <div class="grid-item carousel-family">
+                <div id="buttons" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/fam2.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/koreafam.jpg" alt="Korean family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/fam4.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/dad.jpg" alt="Dad" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/fam.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/cousins.jpg" alt="Cousins" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/chongmin.jpg" alt="Cousin" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/car.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/aunt.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/85.jpg" alt="Family" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-item friends-description">
+                <p>my friends</p>
+            </div>
+
+
+            <div class="grid-item carousel-friends">
+                <div id="buttons2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/tolo.jpg" alt="Tolo" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/annika3.jpg" alt="Annika" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/thanksgiving.jpg" alt="Thanksgiving" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/annika.jpg" alt="Annika" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/jacob.jpg" alt="Jacob" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/hoco.jpg" alt="Hoco" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/darioush.jpg" alt="Darioush" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="images/annika5.jpg" alt="Annika" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img src="images/annika2.jpg" alt="Annika" class="d-block w-100">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
