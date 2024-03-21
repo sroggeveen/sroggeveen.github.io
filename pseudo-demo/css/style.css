@@ -1,0 +1,82 @@
+body {
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: black;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+a.special {
+    color: orange;
+}
+
+#first p:first-child {
+    color: red;
+}
+
+#first p:last-child {
+    font-weight: bold;
+}
+
+#pseudo-elements::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+#pseudo-elements::before {
+    content: "Read This: ";
+    font-weight: bold;
+}
+
+#pseudo-elements::after {
+    content: " Remeber this:";
+    font-weight: bold;
+}
+
+#color h3:hover {
+    color: red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.hover div:hover {
+    background-color: pink;
+}
