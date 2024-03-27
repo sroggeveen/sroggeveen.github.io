@@ -1,109 +1,109 @@
-body {
-    background-color: rgba(251, 196, 171, 0.361);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-gap: 10px;
-}
-
-.navmenu {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    border: 5px solid rgba(255, 218, 185);
-}
-
-.div-nav {
-    background-color: rgba(236, 236, 236);
-    width: 200;
-    margin: 0 auto;
-}
-
-ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    text-align: center;
-}
-
-ul.nav li {
-    display: inline-block;
-    font-family: bicyclette, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-}
-
-ul.nav li a {
-    display: block;
-    color: rgb(240, 128, 128);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.nav li a:hover {
-    background-color: rgba(236, 236, 236);
-}
-
-.nav {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-gap: 10px;
-}
-
-.div {
-    width: 900px;
-    margin: 0px auto;
-    padding: 50px;
-    border-radius: 20px;
-    background-color: rgba(248, 174, 157, 0.393);
-    border: 3px solid rgba(255, 218, 185);
-}
-
-.title {
-    text-align: center;
-    font-size: xxx-large;
-    color: white;
-    -webkit-text-stroke: 2.5px rgba(240, 128, 128);
-    font-family: bicyclette, sans-serif;
-    font-weight: 700;
-    font-style: unset;
-}
-
-p {
-    text-align: center;
-    font-family: bicyclette, sans-serif;
-}
-
-h2,
-h6 {
-    text-align: center;
-    color: rgb(240, 128, 128);
-    font-family: bicyclette, sans-serif;
-}
-
-a:link {
-    color: rgba(240, 128, 128);
-}
-
-a:hover {
-    color: rgba(231, 181, 181, 0.34);
-}
-
-a:visited {
-    color: rgba(240, 128, 128, 0.306);
-}
-
-a:active {
-    color: rgb(228, 92, 92);
-}
+    body {
+        background-color: rgba(251, 196, 171, 0.361);
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-gap: 10px;
+    }
+    
+    .navmenu {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        border: 5px solid rgba(255, 218, 185);
+    }
+    
+    .div-nav {
+        background-color: rgba(236, 236, 236);
+        width: 200;
+        margin: 0 auto;
+    }
+    
+    ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        text-align: center;
+    }
+    
+    ul.nav li {
+        display: inline-block;
+        font-family: bicyclette, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+    }
+    
+    ul.nav li a {
+        display: block;
+        color: rgb(240, 128, 128);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    ul.nav li a:hover {
+        background-color: rgba(236, 236, 236);
+    }
+    
+    .nav {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+        grid-gap: 10px;
+    }
+    
+    .div {
+        width: 900px;
+        margin: 0px auto;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: rgba(248, 174, 157, 0.393);
+        border: 3px solid rgba(255, 218, 185);
+    }
+    
+    .title {
+        text-align: center;
+        font-size: xxx-large;
+        color: white;
+        -webkit-text-stroke: 2.5px rgba(240, 128, 128);
+        font-family: bicyclette, sans-serif;
+        font-weight: 700;
+        font-style: unset;
+    }
+    
+    p {
+        text-align: center;
+        font-family: bicyclette, sans-serif;
+    }
+    
+    h2,
+    h6 {
+        text-align: center;
+        color: rgb(240, 128, 128);
+        font-family: bicyclette, sans-serif;
+    }
+    
+    a:link {
+        color: rgba(240, 128, 128);
+    }
+    
+    a:hover {
+        color: rgba(231, 181, 181, 0.34);
+    }
+    
+    a:visited {
+        color: rgba(240, 128, 128, 0.306);
+    }
+    
+    a:active {
+        color: rgb(228, 92, 92);
+    }
