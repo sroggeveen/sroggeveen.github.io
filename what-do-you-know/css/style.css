@@ -31,6 +31,10 @@ ul.nav {
 
 ul.nav li {
     display: inline-block;
+    font-family: bicyclette, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
 }
 
 ul.nav li a {
@@ -57,13 +61,6 @@ ul.nav li a:hover {
     grid-gap: 10px;
 }
 
-li {
-    font-family: bicyclette, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px
-}
-
 .div {
     width: 900px;
     margin: 0px auto;
@@ -81,4 +78,32 @@ li {
     font-family: bicyclette, sans-serif;
     font-weight: 700;
     font-style: unset;
+}
+
+p {
+    text-align: center;
+    font-family: bicyclette, sans-serif;
+}
+
+h2,
+h6 {
+    text-align: center;
+    color: rgb(240, 128, 128);
+    font-family: bicyclette, sans-serif;
+}
+
+a:link {
+    color: rgba(240, 128, 128);
+}
+
+a:hover {
+    color: rgba(231, 181, 181, 0.34);
+}
+
+a:visited {
+    color: rgba(240, 128, 128, 0.306);
+}
+
+a:active {
+    color: rgb(228, 92, 92);
 }
