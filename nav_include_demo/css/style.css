@@ -52,15 +52,24 @@ footer {
 
 ul.nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: white;
     text-align: center;
+    text-decoration: none;
 }
 
-.div-nav {
-    background-color: lightgoldenrodyellow;
-    width: 200;
-    margin: 0 auto;
+li {
+    display: inline-block;
+}
+
+a:link {
+    color: rgb(124, 124, 173);
+}
+
+a:visited {
+    color: rgb(124, 124, 173);
+}
+
+a:hover {
+    color: navy;
 }
