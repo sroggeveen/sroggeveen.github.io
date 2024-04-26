@@ -45,12 +45,14 @@ footer {
 
 .menu-item {
     font-weight: bold;
+    font-size: 20px;
     color: rgb(124, 124, 173);
     text-align: center;
+    list-style-type: none;
 }
 
 .navbar {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     float: left;
     width: 100%;
 }
