@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(124, 124, 173);
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: lightgoldenrodyellow;
+    color: rgb(124, 124, 173);
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    /*vertical padding first*/
+    /*horizontal padding second*/
+}
+
+.footer {
+    background-color: lightgoldenrodyellow;
+    color: rgb(124, 124, 173);
+    padding: 10px;
+    clear: both;
+    /*ignore floats, start footer after the floats*/
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    /*don't change top/bottom margin, find automatic horizontally where to go*/
+}
+
+.menu-item {
+    font-weight: bold;
+}
