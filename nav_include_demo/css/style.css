@@ -25,6 +25,7 @@ body {
     width: 100%;
     padding: 0 20px;
     text-align: center;
+    clear: both;
     /*vertical padding first*/
     /*horizontal padding second*/
 }
