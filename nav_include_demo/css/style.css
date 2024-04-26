@@ -18,7 +18,6 @@ body {
     color: rgb(124, 124, 173);
     text-align: center;
     padding: 20px;
-    clear: both;
 }
 
 .main {
@@ -49,12 +48,19 @@ footer {
     font-weight: bold;
     font-size: 20px;
     color: rgb(124, 124, 173);
-    text-align: center;
-    list-style-type: none;
 }
 
-.navbar {
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: white;
-    float: left;
-    width: 100%;
+    text-align: center;
+}
+
+.div-nav {
+    background-color: lightgoldenrodyellow;
+    width: 200;
+    margin: 0 auto;
 }
