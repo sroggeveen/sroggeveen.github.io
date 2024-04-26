@@ -26,8 +26,6 @@ body {
     padding: 0 20px;
     text-align: center;
     clear: both;
-    /*vertical padding first*/
-    /*horizontal padding second*/
 }
 
 .footer {
@@ -77,12 +75,14 @@ ul {
     position: relative;
     display: block;
     text-align: center;
+    text-decoration: none;
 }
 
 li {
     width: auto;
     display: inline;
     padding: 10px;
+    text-decoration: none;
 }
 
 .menu-item {
