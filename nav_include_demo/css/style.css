@@ -44,21 +44,17 @@ footer {
     /*don't change top/bottom margin, find automatic horizontally where to go*/
 }
 
+.navmenu {
+    float: left;
+    width: 100%;
+}
+
 .menu-item {
     font-weight: bold;
     font-size: 20px;
-    color: rgb(124, 124, 173);
-}
-
-ul.nav {
     list-style-type: none;
-    overflow: hidden;
-    background-color: white;
     text-align: center;
     text-decoration: none;
-}
-
-li {
     display: inline-block;
 }
 
