@@ -55,14 +55,23 @@ footer {
     width: 100%;
 }
 
+ul {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+li {
+    width: auto;
+    display: inline;
+    padding: 10px;
+}
+
 .menu-item {
     font-weight: bold;
     font-size: 20px;
     list-style-type: none;
     text-decoration: none;
-    display: inline;
-    text-align: center;
-    padding: 10px;
 }
 
 a:link {
