@@ -44,6 +44,18 @@ footer {
     /*don't change top/bottom margin, find automatic horizontally where to go*/
 }
 
+.contact {
+    float: left;
+    width: 60%;
+    background-color: lightgoldenrodyellow;
+}
+
+.map {
+    float: left;
+    width: 30%;
+    background-color: lightgoldenrodyellow;
+}
+
 .navmenu {
     float: left;
     width: 100%;
