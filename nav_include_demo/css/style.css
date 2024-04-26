@@ -44,6 +44,14 @@ footer {
     /*don't change top/bottom margin, find automatic horizontally where to go*/
 }
 
+.welcome {
+    float: left;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    margin: 10px auto;
+    text-align: center;
+}
+
 .contact {
     float: left;
     width: 100%;
