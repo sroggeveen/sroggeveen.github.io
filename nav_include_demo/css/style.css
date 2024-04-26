@@ -48,17 +48,20 @@ footer {
     float: left;
     width: 60%;
     background-color: lightgoldenrodyellow;
+    margin: 10px 0;
 }
 
 .pic {
     float: left;
     width: 40%;
     background-color: lightgoldenrodyellow;
+    margin: 10px 0;
 }
 
 .navmenu {
     float: left;
     width: 100%;
+    margin: 0 auto;
 }
 
 .menu-item {
