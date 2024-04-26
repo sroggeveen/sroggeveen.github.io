@@ -48,6 +48,16 @@ footer {
     float: left;
     width: 100%;
     background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about {
+    float: left;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    margin: 10px;
+    text-align: center;
 }
 
 .navmenu {
