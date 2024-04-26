@@ -18,6 +18,7 @@ body {
     color: rgb(124, 124, 173);
     text-align: center;
     padding: 20px;
+    clear: both;
 }
 
 .main {
