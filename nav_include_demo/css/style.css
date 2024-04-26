@@ -45,6 +45,9 @@ footer {
 
 .menu-item {
     font-weight: bold;
+}
+
+.navbar {
     color: rgb(124, 124, 173);
     background-color: lightgoldenrodyellow;
     float: left;
