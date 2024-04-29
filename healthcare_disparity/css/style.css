@@ -1,0 +1,141 @@
+head {
+    margin: 0 auto;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-gap: 20px;
+}
+
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border: 5px solid lightblue;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+ul.nav li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+ul.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-gap: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.welcome {
+    grid-row: 2;
+    grid-column: 1/span 3;
+    background-color: white;
+    padding: 100px;
+    border: 5px solid lightblue;
+}
+
+h1 {
+    color: lightblue;
+    text-align: center;
+    font-size: 60px
+}
+
+.intro {
+    background-color: white;
+    border: 5px solid lightblue;
+    grid-row: 3;
+    grid-column: 1/span 2;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    color: lightblue;
+    text-align: center;
+}
+
+.image {
+    grid-row: 3;
+    grid-column: 3/span1;
+    background-color: white;
+    border: 5px solid lightblue;
+}
+
+.disparity {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.quote1 {
+    grid-row: 4;
+    background-color: white;
+    border: 5px solid lightblue;
+    padding: 10px;
+}
+
+.quote2 {
+    grid-row: 4;
+    background-color: white;
+    border: 5px solid lightblue;
+    padding: 10px;
+}
+
+.quote3 {
+    grid-row: 4;
+    background-color: white;
+    border: 5px solid lightblue;
+    padding: 10px;
+}
+
+.mark {
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+}
+
+footer {
+    background-color: white;
+}
