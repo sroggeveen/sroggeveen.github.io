@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1 .8vw;
+}
+
+p,
+a {
+    font-size: 1.6vw
+}
+
+.nav {
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.619);
+    color: white;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    position: sticky;
+    top: -30px;
+}
+
+.nav-inner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo-picture {
+    float: left;
+    width: 30%;
+    padding-left: 30px;
+}
+
+.logo {
+    height: 4.5em;
+    width: 5.5em;
+}
+
+nav {
+    float: left;
+    width: 70%;
+    text-align: right;
+    padding: 22px 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    padding: 10px;
+    color: grey
+}
+
+a {
+    color: white;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.side-nav a {
+    background-color: darkgrey;
+    color: white;
+    text-decoration: none;
+    display: block;
+    /*filling what it wants to fill*/
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    /*vertical padding first*/
+    /*horizontal padding second*/
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: darkgrey;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.picture {
+    float: left;
+    width: 100%;
+    background-color: darkgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    background-color: darkgrey;
+    color: white;
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    /*ignore floats, start footer after the floats*/
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+    /*don't change top/bottom margin, find automatic horizontally where to go*/
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+    .picture {
+        width: 100%;
+    }
+    .picture2 {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+    .picture2 {
+        width: 200px;
+    }
+}
