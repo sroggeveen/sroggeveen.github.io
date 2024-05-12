@@ -240,7 +240,7 @@
         padding: 1.5em 2em;
     }
     
-    @media (min-width:620px) and (max-width:1280px) {
+    @media (min-width:620px) and (max-width:1200px) {
         .home-pic {
             grid-row: 1;
             grid-column: 1/ span 2;
