@@ -66,9 +66,9 @@ nav {
 }
 
 .nav a:hover {
-    text-decoration: none;
     padding: 10px;
-    color: grey
+    color: rgb(210, 220, 226);
+    text-decoration: none;
 }
 
 a {

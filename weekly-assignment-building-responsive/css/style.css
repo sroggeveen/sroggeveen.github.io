@@ -1,0 +1,332 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+    }
+    
+    .main {
+        width: 100%
+    }
+    
+    p {
+        font-size: 10em;
+    }
+    
+    .underline {
+        width: 0;
+        height: 0.1em;
+        margin: auto;
+        background-color: black;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-item:has(.nav-text:hover) .underline {
+        width: 100%;
+    }
+    
+    nav {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: white;
+    }
+    
+    .nav {
+        position: sticky;
+        top: -10px;
+    }
+    
+    .nav-buckets {
+        position: sticky;
+        top: -10px;
+    }
+    
+    nav .nav-buckets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-item {
+        font-size: 1.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 1em 0;
+        color: black;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    
+    .home-pic {
+        grid-row: 1;
+        grid-column: 1/span 1;
+    }
+    
+    .artwork {
+        width: 100%;
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+    }
+    
+    .welcome {
+        grid-row: 1;
+        grid-column: 2/span 1;
+        background-color: black;
+    }
+    
+    .welcome-text {
+        font-family: "lucida handwriting";
+        color: white;
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .shapes {
+        width: 80%;
+        margin-top: 0.25m;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .welcome-paragraph {
+        font-family: 'Arial Narrow Bold', sans-serif;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        padding: 0em 1em;
+    }
+    
+    button {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        font-family: 'arial narrow bold', sans-serif;
+    }
+    
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    .square1 {
+        grid-row: 2;
+        grid-column: 1 / span 1;
+        background-color: black;
+        border-radius: 3em;
+        margin: 2em 2em;
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+    }
+    
+    .square2 {
+        grid-row: 2;
+        grid-column: 2 / span 1;
+        background-color: black;
+        border-radius: 3em;
+        margin: 2em 2em;
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+    }
+    
+    .square3 {
+        grid-row: 2;
+        grid-column: 3 / span 1;
+        background-color: black;
+        border-radius: 3em;
+        margin: 2em 2em;
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+    }
+    
+    .square4 {
+        grid-row: 2;
+        grid-column: 4 / span 1;
+        background-color: black;
+        border-radius: 3em;
+        margin: 2em 2em;
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+    }
+    
+    .square-text {
+        font-size: 1em;
+        text-align: center;
+        padding: 1em;
+        color: white;
+    }
+    
+    .container {
+        background-color: black;
+        width: 187%;
+        height: 100%;
+        overflow-x: scroll;
+        display: block;
+        padding-top: 6em;
+    }
+    
+    .gallery-photo {
+        box-shadow: 0.25em 0.25em 0.25em rgb(90, 88, 88);
+        margin: 3em 3em;
+    }
+    
+    .nav1 {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+    
+    .nav-buckets1 {
+        justify-content: center;
+    }
+    
+    .contact {
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .contact a {
+        color: white;
+    }
+    
+    .contact a:hover {
+        color: rgb(176, 172, 172);
+    }
+    
+    #contactForm {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .name {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+        padding: 1.5em 2em;
+    }
+    
+    .email {
+        grid-row: 2;
+        grid-column: 1/span 1;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+        padding: 1.5em 2em;
+    }
+    
+    .comment {
+        grid-row: 1 / span 2;
+        grid-column: 2/span 1;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+        padding: 1.5em 2em;
+    }
+    
+    @media (min-width:621px) and (max-width:1200px) {
+        .home-pic {
+            grid-row: 1;
+            grid-column: 1/ span 2;
+        }
+        .welcome {
+            grid-row: 2;
+            grid-column: 1/span 2;
+        }
+        button {
+            margin-bottom: 3em;
+        }
+        .square1 {
+            grid-row: 2;
+            grid-column: 1/span 2;
+            margin: 1em 1em;
+        }
+        .square2 {
+            grid-row: 2;
+            grid-column: 3/ span 2;
+            margin: 1em 1em;
+        }
+        .square3 {
+            grid-row: 3;
+            grid-column: 1/span 2;
+            margin: 1em 1em;
+        }
+        .square4 {
+            grid-row: 3;
+            grid-column: 3/span 2;
+            margin: 1em 1em;
+        }
+        .container {
+            width: 550%;
+        }
+    }
+    
+    @media only screen and (max-width: 620px) {
+        .home-pic {
+            grid-row: 1;
+            grid-column: 1/ span 2;
+        }
+        .welcome {
+            grid-row: 2;
+            grid-column: 1/span 2;
+        }
+        button {
+            margin-bottom: 3em;
+        }
+        .nav-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            font-size: 1em;
+        }
+        .square1 {
+            grid-row: 2;
+            grid-column: 1/span 4;
+            margin: 1em 1em;
+        }
+        .square2 {
+            grid-row: 2;
+            grid-column: 1/ span 4;
+            margin: 1em 1em;
+        }
+        .square3 {
+            grid-row: 3;
+            grid-column: 1/span 4;
+            margin: 1em 1em;
+        }
+        .square4 {
+            grid-row: 4;
+            grid-column: 1/span 4;
+            margin: 1em 1em;
+        }
+        .container {
+            width: 550%;
+        }
+        .name {
+            grid-row: 1;
+            grid-column: 1 /span 2;
+        }
+        .email {
+            grid-row: 2;
+            grid-column: 1 /span 2;
+        }
+        .comment {
+            grid-row: 3;
+            grid-column: 1 /span 2;
+        }
+    }
