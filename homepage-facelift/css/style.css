@@ -1,0 +1,286 @@
+body {
+    background-color: white;
+}
+
+h1.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 4.5em;
+    font-size: 3em;
+}
+
+h2.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.underline {
+    width: 0;
+    height: 0.1em;
+    margin: auto;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item:has(.nav-text:hover) .underline {
+    width: 100%;
+}
+
+nav {
+    background-color: white;
+    height: 3em;
+}
+
+nav .nav-buckets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.nav-item {
+    font-size: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em 0;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    height: 3.5em;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.image {
+    grid-row: 1;
+    grid-column: 1/span 1;
+    padding: 3.5em;
+    text-align: center;
+}
+
+.description {
+    grid-row: 1;
+    grid-column: 2/span 1;
+    margin: 3.5em 1em;
+    padding: 1em 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3.5em;
+    background-color: rgb(236, 236, 236);
+    border-radius: 3em;
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.karen {
+    height: 27em;
+    width: 85%;
+    border: 0.25em solid rgb(128, 50, 50);
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.text {
+    font-size: 1.3em;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-items: center;
+}
+
+.testimonial1 {
+    grid-row: 1;
+    grid-column: 1 /span 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em 2em;
+    background-color: rgb(244, 193, 163);
+    border-radius: 3em;
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.testimonial2 {
+    grid-row: 1;
+    grid-column: 2 /span 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em 2em;
+    background-color: rgb(244, 193, 163);
+    border-radius: 3em;
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.testimonial3 {
+    grid-row: 1;
+    grid-column: 3 /span 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em 2em;
+    background-color: rgb(244, 193, 163);
+    border-radius: 3em;
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.testimonial4 {
+    grid-row: 1;
+    grid-column: 4 /span 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em 2em;
+    background-color: rgb(244, 193, 163);
+    border-radius: 3em;
+    box-shadow: 0.5em 0.5em 2em darkgray;
+}
+
+.testimonial {
+    padding: 0.5em;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.quote {
+    height: 3.125em;
+    width: 3.125em;
+    margin-left: 1em;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 43, 53);
+    text-align: center;
+    color: white;
+    padding: 3em;
+}
+
+li {
+    display: inline;
+    padding: 2em;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(199, 199, 199);
+}
+
+footer nav a:hover {
+    color: white;
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .image {
+        grid-row: 3;
+        grid-column: 1/span 1;
+        width: 60%;
+        margin: 0 7em;
+    }
+    .description {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        height: max-content;
+        margin: 2em 2em;
+        margin-bottom: 0;
+    }
+    .testimonial1 {
+        grid-row: 1;
+        grid-column: 1/span 2;
+        margin: 1em 1em;
+    }
+    .testimonial2 {
+        grid-row: 1;
+        grid-column: 3/span 2;
+        margin: 1em 1em;
+    }
+    .testimonial3 {
+        grid-row: 2;
+        grid-column: 1/span 2;
+        margin: 1em 1em;
+        margin-bottom: 2em;
+    }
+    .testimonial4 {
+        grid-row: 2;
+        grid-column: 3/span 2;
+        margin: 1em 1em;
+        margin-bottom: 3em;
+    }
+    footer li {
+        display: block;
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .image {
+        grid-row: 3;
+    }
+    .description {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        height: 38em;
+        font-size: 1em;
+        margin: 2em 2em;
+        margin-bottom: 0;
+    }
+    .testimonial1 {
+        grid-row: 1;
+        grid-column: 1/span 4;
+        margin: 1em 1em;
+    }
+    .testimonial2 {
+        grid-row: 2;
+        grid-column: 1/span 4;
+        margin: 1em 1em;
+    }
+    .testimonial3 {
+        grid-row: 3;
+        grid-column: 1/span 4;
+        margin: 1em 1em;
+        margin-bottom: 2em;
+    }
+    .testimonial4 {
+        grid-row: 4;
+        grid-column: 1/span 4;
+        margin: 1em 1em;
+        margin-bottom: 3em;
+    }
+    footer li {
+        display: block;
+        padding: 1em;
+    }
+    .nav-item {
+        font-size: 0.8em;
+        margin-left: 0.8em;
+    }
+    .logo {
+        display: none;
+    }
+    nav {
+        height: 1em;
+    }
+}
