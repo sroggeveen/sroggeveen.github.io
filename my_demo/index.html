@@ -3,16 +3,130 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Roggeveen | Demo</title>
-    <link href="css/style.css" rel="stylesheet" id="theme-link">
+    <title>Roggeveen | My Demo</title>
+    <link href="css/light.css" rel="stylesheet" id="theme-link">
 </head>
+
+<style>
+    span {
+        color: lightcoral;
+        font-weight: bold;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    code {
+        background-color: lightgray;
+        color: rgb(55, 55, 55);
+    }
+</style>
 
 <body>
 
     <div class="main">
-        <h1>Hey there! This is just a title</h1>
-        <p>I am just a boring text, existing here solely for the purpose of this demo</p>
-        <p>And I am just another one like the one above me, because two is better than having only one</p>
+        <h1>Light & Dark Mode Demo</h1>
+        <h2>For this demo, I am going to show you how to switch between stylesheets using a JavaScript button. This can be used for many different things, but in this case, I will use it to switch between light and dark mode styles.</h2>
+        <h3>File Structure:</h3>
+        <p>To begin, create your normal folder structure: css, images, and js. Create a index.html page, two stylesheet pages within the css folder: light.css and dark.css, and a script.js page within the js folder. Your file structure should look something
+            like this:
+        </p>
+        <img src="images/files.JPG" alt="folder structure" style="margin-left: auto; margin-right: auto; display:block; width:30%">
+        <h3>HTML and CSS:</h3>
+        <p>Now, I am just going to build out my webpage as usual.</p>
+        <p>Personally, I prefer the light theme, so I am going to make my default color theme <span>light</span> by linking the light.css file to the index.html in the head section like this:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+                link> href="css/light.css" rel="stylesheet"
+            </code>
+        </div>
+        <p>It is important to remember that for attributes you want to <span>stay the same</span> in both light and dark modes, you must copy their css to <span>both </span>the light.css and dark.css pages. I found it easier for a simple website (such as
+            this one) to simply use inline css or the style tag wthin the index.html page. This ensures that the attributes you want to stay constant in both the light and dark mode will remain when the theme is toggled. Ideally, the only difference between
+            the light.css and dark.css pages are the <code>background-color</code> and <code>color</code> attributes.</p>
+        <p>For example, at the minimum, the light.css page might look like this:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+            /* light-theme.css */ <br>
+            <br>
+                body { <br>
+                    background-color: lightgray; <br>
+                    font-family: Arial, Helvetica, sans-serif; <br>
+                }<br>
+                <br>
+                div {<br>
+                    width: 80%;<br>
+                    background-color: white;<br>
+                    color: black;<br>
+                } <br>
+        </code>
+        </div>
+        <p>And the dark.css page might look like this:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+                /* dark-theme.css */ <br>
+                <br>
+                body { <br>
+                    background-color: darkgray;<br>
+                    font-family: Arial, Helvetica, sans-serif;<br>
+                }<br>
+                <br>
+                div {<br>
+                    width: 80%;<br>
+                    background-color: black;<br>
+                    color: white;<br>
+                }
+        </code>
+        </div>
+        <p>Obviously, there might be more CSS within div or body tags, but that depends on your website. At the minimum, notice that the colors are inverted on each stylesheet (black vs white in this example). For light or dark mode, this is the
+            <span>most important</span> part! If you do not change the colors between the light.css and dark.css pages, your code will not yield light/dark modes when you click the button.
+        </p>
+
+        <h3>JavaScript:</h3>
+        <p>Now, to build out the button that switches stylesheets when it is clicked. Before you begin, make sure to link the script.js page at the end of the page. This should go below the last body tag, and before the html tag, like this:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+                /body> <br>
+                <br>
+                script> src=js/script.js /script> <br>
+                <br>
+                /html>
+            </code>
+        </div>
+        <p>Add a button to your index.html sheet:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+                button> class="btn-toggle"> Toggle Dark-Mode /button>
+            </code>
+        </div>
+        <p>Next, move to your script.js folder and use this js code:</p>
+        <div style="text-align: center;">
+            <code style="display: inline-block; text-align: left; padding:2em;">
+                const btn = document.querySelector(".btn-toggle");<br>
+                const theme = document.querySelector("#theme-link");<br>
+                <br>
+                btn.addEventListener("click", function() {<br>
+                    if (theme.getAttribute("href") == "css/light.css") {<br>
+                        theme.href = "css/dark.css";<br>
+                    } else {<br>
+                        theme.href = "css/light.css";<br>
+                    } <br>
+                });
+            </code>
+        </div>
+        <p>If everything is working correctly, your button should "listen" for a click and toggle between the light.css and dark.css stylesheets. Assuming the only thing different between the light and dark stylesheets is the colors, your website should
+            toggle between light and dark upon a click.</p>
+
+        <h3>Try it with this website!</h3>
+        <p>This website has a light and dark mode using this very technique! Try it out!</p>
         <button class="btn-toggle">Toggle Dark-Mode</button>
 
     </div>
