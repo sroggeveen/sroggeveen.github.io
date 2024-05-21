@@ -3,19 +3,24 @@
 }
 
 body {
-    color: #222;
-    background: #fff;
+    color: black;
+    background-color: lightgray;
+}
+
+.main {
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px double black;
 }
 
 body.dark-theme {
-    color: #eee;
-    background: #121212;
+    background-color: darkgray;
 }
 
-a {
-    color: #0033cc;
-}
-
-body.dark-theme a {
-    color: #809fff;
+div.dark-theme {
+    background-color: black;
+    color: white;
 }
