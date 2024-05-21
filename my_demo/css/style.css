@@ -20,7 +20,7 @@ body.dark-theme {
     background-color: darkgray;
 }
 
-div.dark-theme {
+.main.dark-theme {
     background-color: black;
     color: white;
 }
