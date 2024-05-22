@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body style="background-image:url(images/background.jpg); width:100%; background-repeat: no-repeat;">
+
+    <nav>
+        <div class="navbar">
+            <div class="containernav nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <div class="logo">
+                </div>
+
+                <div class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#.html">Portfolio</a></li>
+                    <li><a href="#.html">Before & After</a></li>
+                    <li><a href="#.html">Pricing</a></li>
+                    <li><a href="#.html">About</a></li>
+                    <li><a href="#.html">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-div">
+        <h1>SIENNA'S PORTFOLIO</h1>
+        <div class="grid-container">
+            <div class="work1">
+                <p style="padding:0 4em; font-weight:bold;color:lightgray; font-size:small;">FEATURED</p>
+                <img src="images/placeholder.png" alt="simple placehodler image" style="height:20em; width:105%; padding-left:3em;">
+            </div>
+            <div class="intro">
+                <h2>Artist</h2>
+                <p style="margin-bottom:4em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
