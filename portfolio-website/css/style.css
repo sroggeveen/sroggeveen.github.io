@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "noka", sans-serif;
+    width: 90%;
 }
 
 .containernav {
