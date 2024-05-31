@@ -108,7 +108,7 @@ body {
 
 .navbar .menu-items {
     padding-top: 120px;
-    height: max-content;
+    height: 30em;
     padding-bottom: 6em;
     width: 30%;
     transform: translate(-150%);
