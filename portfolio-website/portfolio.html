@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body style="background-image:url(images/background-portfolio.jpg); background-repeat: no-repeat; width:399%; overflow-x: scroll; overflow-y: hidden;">
+    <div class="nav-grid">
+        <nav class="portfolio-grid">
+            <div class="navbar">
+                <div class="containernav1 nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <p class="name-portfolio">PHOTO PORTFOLIO</p>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="before-after.html">Before & After: Editing</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="portfolio-div">
+        <img src="images/Sienna_Roggeveen_NIGHT_03032024.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_VIEW_FROM_A_PLANE_11292023.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_WATERFALLS_11292023.jpg" class="image">
+        <img src="images/Roggeveen_Sienna_CHARLEY_012624.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_CHERRY_FERRARI_020824.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_FIELD_11292023.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_SUNRISE_11292023.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_KIMBAP_11292023.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_WALKING_020824.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_COXSWAIN_03032024.jpg" class="image">
+        <img src="images/Sienna_Roggeveen_COXSWAIN_11292023.jpg" class="image">
+        <img src="images/Roggeveen_Sienna_KATE_012624.jpg" class="image" style="margin-right:4em;">
+    </div>
+
+
+
+</body>
+
+</html>
