@@ -313,6 +313,8 @@ footer .nav-buckets-footer {
 a {
     text-decoration: none;
     color: white;
+    font-family: "noka", sans-serif;
+    font-size: 0.9em;
 }
 
 .placeholder {
