@@ -289,7 +289,6 @@ h1 {
 
 footer {
     background-color: #8693AB;
-    height: 10em;
 }
 
 footer .nav-buckets-footer {
@@ -307,14 +306,13 @@ footer .nav-buckets-footer {
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2em;
 }
 
 a {
     text-decoration: none;
     color: white;
     font-family: "noka", sans-serif;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .placeholder {
@@ -325,4 +323,18 @@ a {
     margin: 0 auto;
     margin-top: 5em;
     margin-bottom: 7em;
+}
+
+.footer-name {
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.footer-words {
+    color: white;
+    display: inline;
+    margin: 1em auto;
 }
