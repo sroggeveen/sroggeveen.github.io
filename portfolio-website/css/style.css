@@ -336,5 +336,22 @@ a {
 .footer-words {
     color: white;
     display: inline;
-    margin: 1em auto;
+    font-size: 1em;
+}
+
+.icon {
+    height: 2em;
+    margin-top: 2em;
+}
+
+.icons {
+    height: 3.5em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.icons-social {
+    display: inline;
+    margin-left: 32em;
 }
