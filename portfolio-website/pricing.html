@@ -40,7 +40,78 @@
     </script>
 </head>
 
-<body style="background-image:url(images/background.jpg); width:100%; background-repeat: no-repeat;">
+<style>
+    /* code sourced from https://codepen.io/denic/pen/GRoOxbM */
+    
+    .wrapper {
+        height: 4em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 3em;
+    }
+    
+    .typing-title {
+        width: 7.4ch;
+        animation: typing 1s steps(8), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        color: white;
+        margin-top: 1em;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 7em;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+    @media (min-width:621px) and (max-width:1000px) {
+        .pricing1 {
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+        .pricing2 {
+            grid-row: 2;
+            grid-column: 1/span 3;
+        }
+        .pricing3 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    }
+    
+    @media only screen and (max-width: 620px) {
+        .typing-title {
+            font-size: 7em;
+        }
+        .pricing1 {
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+        .pricing2 {
+            grid-row: 2;
+            grid-column: 1/span 3;
+        }
+        .pricing3 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    }
+    
+    |
+</style>
+
+<body style="background-image:url(images/background-big.jpg); width:100%; background-repeat: no-repeat;">
 
     <div class="nav-grid">
         <nav class="page-grid">
@@ -68,10 +139,50 @@
         </nav>
     </div>
 
+    <div class="wrapper">
+        <div class="typing-title">
+            PRICING
+        </div>
+    </div>
 
-    <div class="placeholder">
-        <h1>PRICING</h1>
 
+    <div class="grid-pricing" style="margin:5em 3em;">
+        <div class="pricing1" style="background-color:white">
+            <h3 class="pricing-h3">EDITING</h3>
+            <h4 class="prices">$5 per photo</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>edit your best photos</li>
+                <li>edit to your suggestions</li>
+                <li>remove/add objects</li>
+            </ul>
+        </div>
+        <div class="pricing2" style="background-color:white">
+            <h3 class="pricing-h3">PHOTOSHOOT</h3>
+            <h4 class="prices">$20 an hour</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>take your photos</li>
+                <li>outfit changes</li>
+                <li>different locations</li>
+            </ul>
+        </div>
+        <div class="pricing3" style="background-color:white">
+            <h3 class="pricing-h3">PHOTOSHOOT & EDITING</h3>
+            <h4 class="prices">$130 deal</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>photoshoot for 3 hours</li>
+                <li>edit every photo</li>
+                <li>driven by YOU</li>
+            </ul>
+        </div>
     </div>
 
 

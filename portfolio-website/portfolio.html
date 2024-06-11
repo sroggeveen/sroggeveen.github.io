@@ -40,8 +40,55 @@
     </script>
 </head>
 
+<style>
+    .wrapper {
+        height: 7em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 5em;
+        text-align: center;
+    }
+    
+    .typing-title {
+        width: 15.5ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 7em;
+        color: white;
+        margin-bottom: 0em;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+    @media (min-width:621px) and (max-width:1000px) {
+        .typing-title {
+            font-size: 6em;
+        }
+    }
+    
+    @media only screen and (max-width: 620px) {
+        .typing-title {
+            font-size: 3.7em;
+        }
+    }
+</style>
 
-<body style="background-image:url(images/background.jpg); background-repeat: no-repeat; width:100%; overflow-x:hidden">
+
+<body style="background-image:url(images/background-big.jpg); background-repeat: no-repeat; width:100%; overflow-x:hidden">
 
     <div class="nav-grid">
         <nav class="page-grid">
@@ -69,7 +116,12 @@
         </nav>
     </div>
 
-    <h1 style="color:white; font-size:4em; margin-top:0.8em; margin-bottom:0; text-align: center;">PHOTO PORTFOLIO</h1>
+    <div class="wrapper">
+        <div class="typing-title">
+            PHOTO PORTFOLIO
+        </div>
+    </div>
+
     <h3 style="color:white; font-size:2em; margin-top:0; margin-bottom:0; text-align:center;">examples of photos I've taken & edited</h3>
 
     <main class="container" id="portfolio-div">
