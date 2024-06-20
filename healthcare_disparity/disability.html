@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disability</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<style>
+    /* code sourced from https://codepen.io/denic/pen/GRoOxbM */
+    
+    .wrapper {
+        height: 4em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 3em;
+    }
+    
+    .typing-title {
+        width: 10ch;
+        animation: typing 1s steps(13), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        color: white;
+        margin-top: 1em;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 7em;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+    .image-disability {
+        height: 17em;
+        width: 17em;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: #8693AB solid 1px;
+        box-shadow: rgb(167, 167, 167) 0.2em 0.2em 1em;
+    }
+</style>
+
+<body style="background-image:url(images/background.jpg); width:100%; background-repeat: no-repeat;">
+
+    <div class="nav-grid">
+        <nav class="page-grid">
+            <div class="navbar">
+                <div class="containernav nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <h3 class="name-pricing">DISABILITY</h3>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="disability.html">Disability</a></li>
+                        <li> <a href="socioeconomic.html">Socioeconomic Status</a></li>
+                        <li><a href="race.html">Race</a></li>
+                        <li><a href="geo-loc.html">Geographic Location</a></li>
+                        <li><a href="gender.html">Gender</a></li>
+                        <li><a href="education.html">Education Level</a></li>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <div class="typing-title">
+            DISABILITY
+        </div>
+    </div>
+
+    <h3 style="color:white; font-size:2em; margin-top:3em; margin-bottom:0; text-align:center;">including but not limited to...</h3>
+
+    <div class="grid-pricing" style="margin:0em 3em;">
+        <div class="pricing1" style="background-color:white">
+            <h3 class="pricing-h3">COMMUNICATION</h3>
+            <p style="padding:0 1em; ">Deaf individuals or those with hearing impairments may encounter challenges due to a lack of sign language interpreters or other communication aids.
+            </p>
+            <a href="https://www.bu.edu/sph/news/articles/2018/healthcare-language-barriers-affect-deaf-people-too/" target="_blank">
+                <button>LEARN MORE</button>
+            </a>
+            <img src="images/deaf-disparity.JPG" class="image-disability">
+
+        </div>
+        <div class="pricing2" style="background-color:white">
+            <h3 class="pricing-h3">PROVIDERS</h3>
+            <p style="padding:0 1em; ">Healthcare providers may hold unconscious biases or stereotypes about people with disabilities, which can affect the quality of care provided.</p>
+            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9534792/" target="_blank">
+                <button>LEARN MORE</button>
+            </a>
+            <img src="images/bias-disability.JPG" class="image-disability">
+        </div>
+        <div class="pricing3" style="background-color:white">
+            <h3 class="pricing-h3">PRICES</h3>
+            <p style="padding:0 1em; ">Individuals with disabilities often face higher healthcare costs, this may cause some people to delay or completely forgo healthcare.</p>
+
+            <a href="https://onlinenursing.duq.edu/post-master-certificates/disability-health-care-advocacy/" target="_blank">
+                <button>LEARN MORE</button>
+            </a>
+            <img src="images/prices-disability.JPG" class="image-disability">
+
+        </div>
+    </div>
+
+
+    <footer style="margin-top:4em;">
+        <h3 class="footer-name ">HEALTHCARE DISPARITIES</h3>
+        <div class="nav-buckets-footer ">
+            <div class="nav-buckets-footer ">
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="index.html ">Home</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="disability.html">Disability</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="socioeconomic.html">Socioeconomic Status</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="race.html ">Race</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="geo-loc.html ">Geographic Location</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="gender.html ">Gender</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="education.html ">Education Level</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="involved.html ">Get Involved</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="about.html ">About</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+            </div>
+
+        </div>
+        <table style="margin: 0 auto; ">
+
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/phone.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">206-475-9400</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/mail.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">
+                            <a style="font-size:1em; " href="mailto:sienna.lulu@gmail.com ">sienna.lulu@gmail.com</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="icons-social ">
+            <a href="https://www.facebook.com/ " target="_blank "> <img class="icons " src="images/facebook.png "></a>
+            <a href="https://www.instagram.com/sienna.lulu/?next=%2F " target="_blank "> <img class="icons " src="images/insta.png "></a>
+            <a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9033254&mcid=6994434350142418944&cid=&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8sORLeZ7WHx17ERV4PEtNNJIAHng_XRVr-YCxcFQBTYjaUnG4qa4AYaAoSOEALw_wcB&gclsrc=aw.ds "
+                target="_blank "><img class="icons " src="images/linkden.png "></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

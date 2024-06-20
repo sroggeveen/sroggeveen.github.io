@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/tab.JPG" type="image/x-icon">
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<style>
+    /* code sourced from https://codepen.io/denic/pen/GRoOxbM */
+    
+    .wrapper {
+        height: 4em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 3em;
+    }
+    
+    .typing-title {
+        width: 7.4ch;
+        animation: typing 1s steps(8), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        color: white;
+        margin-top: 1em;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 7em;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+    
+    @media (min-width:621px) and (max-width:1000px) {
+        .pricing1 {
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+        .pricing2 {
+            grid-row: 2;
+            grid-column: 1/span 3;
+        }
+        .pricing3 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    }
+    
+    @media only screen and (max-width: 620px) {
+        .typing-title {
+            font-size: 7em;
+        }
+        .pricing1 {
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+        .pricing2 {
+            grid-row: 2;
+            grid-column: 1/span 3;
+        }
+        .pricing3 {
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    }
+    
+    |
+</style>
+
+<body style="background-image:url(images/background-big.jpg); width:100%; background-repeat: no-repeat;">
+
+    <div class="nav-grid">
+        <nav class="page-grid">
+            <div class="navbar">
+                <div class="containernav nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <h3 class="name-pricing">PRICING</h3>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="before-after.html">Before & After: Editing</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <div class="typing-title">
+            PRICING
+        </div>
+    </div>
+
+
+    <div class="grid-pricing" style="margin:5em 3em;">
+        <div class="pricing1" style="background-color:white">
+            <h3 class="pricing-h3">EDITING</h3>
+            <h4 class="prices">$5 per photo</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>edit your best photos</li>
+                <li>edit to your suggestions</li>
+                <li>remove/add objects</li>
+            </ul>
+        </div>
+        <div class="pricing2" style="background-color:white">
+            <h3 class="pricing-h3">PHOTOSHOOT</h3>
+            <h4 class="prices">$20 an hour</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>take your photos</li>
+                <li>outfit changes</li>
+                <li>different locations</li>
+            </ul>
+        </div>
+        <div class="pricing3" style="background-color:white">
+            <h3 class="pricing-h3">PHOTOSHOOT & EDITING</h3>
+            <h4 class="prices">$130 deal</h4>
+            <a href="contact.html">
+                <button>BOOK NOW</button>
+            </a>
+            <ul class="pricing-description">
+                <li>photoshoot for 3 hours</li>
+                <li>edit every photo</li>
+                <li>driven by YOU</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <h3 class="footer-name">SIENNA'S PORTFOLIO</h3>
+        <div class="nav-buckets-footer ">
+            <div class="nav-buckets-footer ">
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="index.html ">Home</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="before-after.html">Before & After</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+            </div>
+
+        </div>
+        <table style="margin: 0 auto;">
+            <tbody>
+                <tr>
+                    <td><img src="images/location.png" style="height:2em;display: inline-flex;"></td>
+                    <td>
+                        <p class="footer-words" style="display: table-cell;vertical-align: middle;height: 2em;">10613 NE 38th Pl Kirkland, WA 98033</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="margin: 0 auto;">
+            <tbody>
+                <tr>
+                    <td><img src="images/phone.png" style="height:2em;display: inline-flex;"></td>
+                    <td>
+                        <p class="footer-words" style="display: table-cell;vertical-align: middle;height: 2em;">206-475-9400</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="margin: 0 auto;">
+            <tbody>
+                <tr>
+                    <td><img src="images/mail.png" style="height:2em;display: inline-flex;"></td>
+                    <td>
+                        <p class="footer-words" style="display: table-cell;vertical-align: middle;height: 2em; ">
+                            <a style="font-size:1em;" href="mailto:sienna.lulu@gmail.com">sienna.lulu@gmail.com</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="icons-social">
+            <a href="https://www.facebook.com/" target="_blank"> <img class="icons" src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img class="icons" src="images/insta.png"></a>
+            <a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9033254&mcid=6994434350142418944&cid=&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8sORLeZ7WHx17ERV4PEtNNJIAHng_XRVr-YCxcFQBTYjaUnG4qa4AYaAoSOEALw_wcB&gclsrc=aw.ds"
+                target="_blank"><img class="icons" src="images/linkden.png"></a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

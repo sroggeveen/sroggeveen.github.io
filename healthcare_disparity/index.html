@@ -7,80 +7,289 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
-<body>
-    <div class="grid-container">
-        <div class="grid-item navmenu">
-            <div class="div-nav">
+<style>
+    /* code sourced from https://codepen.io/denic/pen/GRoOxbM */
+    
+    .wrapper {
+        height: 13em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 2em;
+        margin-left: 3em;
+    }
+    
+    .typing-title {
+        width: 10ch;
+        animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 7em;
+        border-right: 3px solid;
+    }
+    
+    .typing-title2 {
+        width: 11ch;
+        animation: typing2 2s steps(10), blink .5s step-end infinite alternate;
+        animation-delay: 1900ms;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 7em;
+        animation-delay: 2s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes typing2 {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+</style>
 
-                <ul class="nav">
-                    <li>
-                        <a href="index.html ">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Race Disparity</a>
-                    </li>
-                    <li>
-                        <a href="# ">Gender Disparity</a>
-                    </li>
-                    <li>
-                        <a href="#">Class Disparity</a>
-                    </li>
-                    <li>
-                        <a href="#">Articles</a>
-                    </li>
-                    <li>
-                        <a href="#">Get Involved</a>
-                    </li>
-                    <li>
-                        <a href="#">Interviews</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                </ul>
+<body style="background-image:url(images/background.jpg); width:100%; background-repeat: no-repeat;">
+
+    <div class="nav-grid">
+        <nav class="page-grid">
+            <div class="navbar">
+                <div class="containernav nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <h3 class="name-home">HOME</h3>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="disability.html">Disability</a></li>
+                        <li> <a href="socioeconomic.html">Socioeconomic Status</a></li>
+                        <li><a href="race.html">Race</a></li>
+                        <li><a href="geo-loc.html">Geographic Location</a></li>
+                        <li><a href="gender.html">Gender</a></li>
+                        <li><a href="education.html">Education Level</a></li>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="main-div">
+
+        <div class="wrapper">
+            <div class="typing-title">
+                HEALTHCARE
+            </div>
+            <div class="typing-title2">
+                DISPARITIES
             </div>
         </div>
+        <div class="grid-container" style="margin-top:0">
+            <div class="work1 ">
+                <h3 style="padding:0 2m; margin-top:0; font-weight:bold;color:lightgray; font-size:small; ">Take a Look:</h3>
+                <img src="images/graph.JPG.png" style="height:25em; width:130%; border: #8693AB solid 3px;" class="image-work1">
+            </div>
 
-        <div class="grid-item welcome">
-            <h1>Healthcare Disparity: Inspiring Communities for Change</h1>
-            <h3>Join the fight in ending healthcare inequities</h3>
-        </div>
-        <div class="intro">
-            <h3>What are healthcare disparities?</h3>
-            <p>Healthcare disparities are the differences and gaps in the quality of healthcare one recieves based on their race, gender, or class. There are multiple definitions of a "healthcare disparity," but is often known as a preventable difference
-                in the quality of healthcare and the ability to achieve optimal health that adversely and disproportionately affects marginalized groups of people, or those who have been systematically oppressed. Often, healthcare disparities result from
-                systematic racism in the medical field, overt racism, educational differences, access to healthcare, environmental conditions, poverty, language barriers, and more. Unfairly advantages some people over others, and puts some at risk for
-                preventable health conditions.</p>
-        </div>
+            <div class="intro ">
+                <h2>Introduction</h2>
+                <p style="margin-bottom:3em; font-size:1em">
+                    A healthcare disparity refers to the uneven distribution of healthcare services and outcomes among different population groups, often driven by social, economic, environmental, or cultural disadvantages. These disparities can manifest in limited access
+                    to care, variations in the quality of treatment, and differences in health outcomes, influenced by factors such as socioeconomic status, race, geographic location, gender, education level, sexual orientation, and disability.
+                    <br style="margin-bottom:1em;"> This website will explore the effects of socioeconomic status, race, geographic location, gender, education level, sexual orientation, and disabilities on the quality of healthcare one recieves. Please
+                    note that the website links provided to expand your knowledge are not the only resources available. In addition, please find opportunities to get involved, support, and fund help these causes.
+                </p>
 
-        <div class="image">
-            <img src="images/disparity.png" alt="intro" class="disparity">
-        </div>
+            </div>
 
-        <div class="grid-item quote1">
-            <img src="images/quotation-mark.jpg" alt="" class="mark">
-            <p>Of all the forms of inequality, injustice in health care is the most shocking and inhuman. <br> -Martin Luther King Jr.</p>
-        </div>
+            <div class="testimonial1">
+                <p style="font-style: italic;">
+                    "Implicit bias is the single most important determinant of health and health care disparities."
+                    <br>
+                    <span style="margin-left:1em; font-style: normal;">-Dayna Bowen Matthew</span></p>
+            </div>
+            <div class="testimonial2">
+                <p style="font-style: italic;">
+                    "Of all the forms of inequality, injustice in health care is the most shocking and inhuman because it often results in physical death."
+                    <br>
+                    <span style="margin-left:1em; font-style: normal;">-Martin Luther King Jr.</span></p>
+            </div>
+            <div class="testimonial3">
+                <p style="font-style: italic">
+                    "Medicine should be viewed as social justice work in a world that is so sick and so riven by inequities."
+                    <br>
+                    <span style="margin-left:1em; font-style: normal;">-Paul Farmer</span></p>
+            </div>
 
-        <div class="quote2">
-            <img src="images/quotation-mark.jpg" alt="" class="mark">
-            <p>Corruption in health care costs more than money. The price of corruption health care is paid in human lives. <br> -Huguette La Belle</p>
-        </div>
+            <div class="testimonial4">
+                <p style="font-style: italic">
+                    "Public health is a powerful tool to level that playing field, to bend the arc of our country away from distrust and disparities and back towards equity and justice."
+                    <br>
+                    <span style="margin-left:1em; font-style: normal;">-Leana S. Wen</span></p>
+            </div>
 
-        <div class="quote3">
-            <img src="images/quotation-mark.jpg" alt="" class="mark">
 
-            <p>Health care should be a human right and not a commodity for sale. <br>-Jim Wallis</p>
         </div>
     </div>
 
     <footer>
-        <p>Created by Sienna Roggeveen 2024</p>
+        <h3 class="footer-name ">HEALTHCARE DISPARITIES</h3>
+        <div class="nav-buckets-footer ">
+            <div class="nav-buckets-footer ">
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="index.html ">Home</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="disability.html">Disability</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="socioeconomic.html">Socioeconomic Status</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="race.html ">Race</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="geo-loc.html ">Geographic Location</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="gender.html ">Gender</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="education.html ">Education Level</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="involved.html ">Get Involved</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="about.html ">About</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+            </div>
+        </div>
+        <table style="margin: 0 auto; ">
+
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/phone.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">206-475-9400</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/mail.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">
+                            <a style="font-size:1em; " href="mailto:sienna.lulu@gmail.com ">sienna.lulu@gmail.com</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="icons-social ">
+            <a href="https://www.facebook.com/ " target="_blank "> <img class="icons " src="images/facebook.png "></a>
+            <a href="https://www.instagram.com/sienna.lulu/?next=%2F" target="_blank "> <img class="icons " src="images/insta.png "></a>
+            <a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9033254&mcid=6994434350142418944&cid=&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8sORLeZ7WHx17ERV4PEtNNJIAHng_XRVr-YCxcFQBTYjaUnG4qa4AYaAoSOEALw_wcB&gclsrc=aw.ds "
+                target="_blank "><img class="icons " src="images/linkden.png "></a>
+        </div>
+
     </footer>
 
-
 </body>
+
+<script src="js/script.js "></script>
 
 </html>
