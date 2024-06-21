@@ -172,6 +172,12 @@
         grid-template-rows: 25% 25% 25% 25%;
     }
     
+    .grid-container-education {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    
     .grid-container-about {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -267,6 +273,15 @@
         margin-right: 8em;
     }
     
+    .work1-education {
+        grid-row: 1 /span 2;
+        grid-column: 2/span 1;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        margin-right: 7em;
+    }
+    
     .intro {
         grid-row: 3;
         grid-column: 1/span 1;
@@ -296,7 +311,7 @@
         background-color: white;
         margin-bottom: 7em;
         margin-top: 3em;
-        height: 33em;
+        height: max-content;
         border: #8693AB solid 3px;
         width: 100%;
     }
@@ -338,8 +353,46 @@
         margin: 0 auto;
     }
     
-    .name-portfolio {
-        margin-left: 58em;
+    .map {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 0em;
+    }
+    
+    .under-geo-loc {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 85.5%;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 4em;
+    }
+    
+    .description-geo {
+        grid-row: 1;
+        grid-column: 2/span 1;
+        background-color: white;
+        border: #8693AB solid 3px;
+        padding: 0.5em 1em;
+    }
+    
+    .geo-loc-links {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        border: #8693AB solid 3px;
+        background-color: white;
+        margin-right: 1em;
+    }
+    
+    .name-involved {
+        margin-left: 56em;
+        font-weight: bold;
+        margin-top: 1em;
+        color: white;
+    }
+    
+    .name-education {
+        margin-left: 56.5em;
         font-weight: bold;
         margin-top: 1em;
         color: white;
@@ -372,6 +425,15 @@
         margin-bottom: 0;
     }
     
+    .name-geo-loc {
+        margin-left: 52em;
+        font-weight: bold;
+        color: white;
+        margin-top: 0em;
+        padding: 1em;
+        margin-bottom: 0;
+    }
+    
     .socioeconomic-div {
         grid-row: 1;
         width: 70%;
@@ -386,45 +448,40 @@
         font-size: 0.9em;
     }
     
-    .name-about {
-        margin-left: 60em;
-        font-weight: bold;
-        color: white;
-        margin-top: 0em;
-        padding: 1em;
-        margin-bottom: 0;
-    }
-    
-    .name-contact {
-        margin-left: 59em;
-        font-weight: bold;
-        color: white;
-        margin-top: 0em;
-        padding: 1em;
-        margin-bottom: 0;
-    }
-    
-    .social-contact {
-        display: inline;
-        margin-left: 7em;
-    }
-    
-    .icons-contact {
-        height: 3em;
-        width: 3em;
-        background-color: #8693AB;
+    .education-div {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        width: 70%;
+        height: 26.5em;
         padding: 1em 1em;
-        border-radius: 1em;
+        color: white;
+        background-color: #8693AB;
+        margin: 0 auto;
+        margin-left: 4em;
+        margin-top: 2.3em;
+        box-shadow: rgb(167, 167, 167) 0.5em 0.5em 2em;
+        font-size: 0.9em;
     }
     
-    .insta {
-        background-color: #8693AB;
-        width: 4em;
-        height: 4em;
+    .name-about {
+        margin-left: 61.5em;
+        font-weight: bold;
+        color: white;
+        margin-top: 0em;
+        padding: 1em;
+        margin-bottom: 0;
     }
     
     a {
         text-decoration: none;
+    }
+    
+    .gender-div {
+        width: 85.5%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin-bottom: 3em;
     }
     
     .race-div {
@@ -442,12 +499,28 @@
         background-color: white;
     }
     
+    .intro-gender {
+        grid-row: 1;
+        grid-column: 2/span 1;
+        border: #8693AB solid 3px;
+        background-color: white;
+    }
+    
     .race-links {
         grid-row: 1;
         grid-column: 2/span 1;
         border: #8693AB solid 3px;
         background-color: white;
         margin-left: 1em;
+    }
+    
+    .gender-links {
+        grid-row: 1;
+        grid-column: 1/span 1;
+        border: #8693AB solid 3px;
+        background-color: #8693AB;
+        margin-right: 1em;
+        color: white;
     }
     
     a {
@@ -472,8 +545,17 @@
         margin-bottom: 0;
     }
     
+    .name-gender {
+        margin-left: 61em;
+        font-weight: bold;
+        color: white;
+        margin-top: 0em;
+        padding: 1em;
+        margin-bottom: 0;
+    }
+    
     .image {
-        height: 25em;
+        height: 12em;
         margin-top: 3.5em;
         border: #8693AB solid 3px;
         box-shadow: rgb(167, 167, 167) 0.5em 0.5em 2em;
@@ -544,17 +626,6 @@
         color: white;
         font-family: "noka", sans-serif;
         font-size: 0.7em;
-    }
-    
-    .placeholder {
-        width: 75%;
-        height: 50em;
-        background-color: white;
-        padding: 0em;
-        margin: 0 auto;
-        margin-top: 8em;
-        margin-bottom: 7em;
-        border: #8693AB solid 3px;
     }
     
     .grid-pricing {
@@ -632,6 +703,8 @@
         color: white;
         display: inline;
         font-size: 1em;
+        font-style: normal;
+        font-family: "noka", sans-serif;
     }
     
     .icon {

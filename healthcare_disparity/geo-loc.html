@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Location</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/scale.png" type="image/x-icon">
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'col2kye',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<style>
+    /* code sourced from https://codepen.io/denic/pen/GRoOxbM */
+    
+    .wrapper {
+        height: 13em;
+        display: grid;
+        place-items: center;
+        margin-bottom: 0em;
+        margin-top: 2.5em;
+        margin-left: 3em;
+    }
+    
+    .typing-title {
+        width: 19.5ch;
+        animation: typing 2s steps(17), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 7em;
+        border-right: 3px solid;
+        color: white;
+    }
+    
+    @keyframes typing2 {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+</style>
+
+<body style="background-image:url(images/background.jpg); width:100%; background-repeat: no-repeat;">
+
+    <div class="nav-grid">
+        <nav class="page-grid">
+            <div class="navbar">
+                <div class="containernav nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+
+                    <h3 class="name-geo-loc">GEOGRAPHIC LOCATION</h3>
+
+                    <div class="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="disability.html">Disability</a></li>
+                        <li> <a href="socioeconomic.html">Socioeconomic Status</a></li>
+                        <li><a href="race.html">Race</a></li>
+                        <li><a href="geo-loc.html">Geographic Location</a></li>
+                        <li><a href="gender.html">Gender</a></li>
+                        <li><a href="education.html">Education Level</a></li>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="typing-title">
+            GEOGRAPHIC LOCATION
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://ourworldindata.org/grapher/healthcare-access-and-quality-index?time=latest&tab=map" loading="lazy" style="width: 100%; height: 500px; border: #8693AB solid 3px;" allow="web-share; clipboard-write"></iframe>
+    </div>
+
+    <div class="under-geo-loc">
+        <div class="description-geo">
+            <h2>Healthcare & Geographic Location</h2>
+            <p>Geographic location significantly impacts healthcare disparities by influencing access to services, quality of care, and health outcomes. The natural environment, including air and water quality, and the built environment, such as availability
+                of healthcare facilities, transportation, and healthy food options, play crucial roles. Rural areas often face shortages of healthcare providers and longer travel distances to medical facilities, resulting in delayed care and poorer outcomes.
+                Urban areas, while having more resources, still show disparities due to socioeconomic factors, overcrowded facilities, and environmental pollutants.
+                <br style="margin-bottom:1em;"> Social and behavioral environments, including cultural beliefs and practices, further affect health outcomes. Policies at various governmental levels influence access to health education, emergency services,
+                and overall health infrastructure, often exacerbating disparities in economically disadvantaged regions. </p>
+        </div>
+        <div class="geo-loc-links">
+            <h3 style="font-size: 2em; margin-top:0.5em; margin-left:0.5em; margin-bottom: 0;">LEARN MORE:</h3>
+            <ul>
+                <li style="font-size: 1.9em;" class="link">
+                    <a href="https://www.atsdr.cdc.gov/placeandhealth/howdoesPlaceaffectHealth.html" target="_blank">CDC</a>
+                </li>
+                <li style="font-size: 1.9em;" class="link">
+                    <a href="https://research.gsd.harvard.edu/hapi/files/2014/10/HAPI-ResearchBrief-Geographic-Healthcare-Access-102814-FINAL.pdf" target="_blank">Harvard</a>
+                </li>
+                <li style="font-size: 1.9em;" class="link">
+                    <a href="https://www.ncbi.nlm.nih.gov/books/NBK221045/" target="_blank">NCBI</a>
+                </li>
+                <li style="font-size: 1.9em;" class="link">
+                    <a href="https://nap.nationalacademies.org/read/12860/chapter/11" target="_blank">National Academic Press</a>
+                </li>
+                <li style="font-size: 1.9em;" class="link">
+                    <a href="https://www.webmd.com/diabetes/features/minority-health-care-location" target="_blank">WebMD</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="footer-name ">HEALTHCARE DISPARITIES</h3>
+        <div class="nav-buckets-footer ">
+            <div class="nav-buckets-footer ">
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="index.html ">Home</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="disability.html">Disability</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="socioeconomic.html">Socioeconomic Status</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="race.html ">Race</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="geo-loc.html ">Geographic Location</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="gender.html ">Gender</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="education.html ">Education Level</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="involved.html ">Get Involved</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+                <div class="nav-item-footer ">
+                    <div class="nav-text-footer ">
+                        <a href="about.html ">About</a>
+                    </div>
+                    <div class="underline-footer "></div>
+                </div>
+
+            </div>
+        </div>
+        <table style="margin: 0 auto; ">
+
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/phone.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">206-475-9400</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="margin: 0 auto; ">
+            <tbody>
+                <tr>
+                    <td><img src="images/mail.png " style="height:2em;display: inline-flex; "></td>
+                    <td>
+                        <p class="footer-words " style="display: table-cell;vertical-align: middle;height: 2em; ">
+                            <a style="font-size:1em; " href="mailto:sienna.lulu@gmail.com ">sienna.lulu@gmail.com</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="icons-social ">
+            <a href="https://www.facebook.com/ " target="_blank "> <img class="icons " src="images/facebook.png "></a>
+            <a href="https://www.instagram.com/sienna.lulu/?next=%2F" target="_blank "> <img class="icons " src="images/insta.png "></a>
+            <a href="https://www.linkedin.com/jobs?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.633923221414_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9033254&mcid=6994434350142418944&cid=&gad_source=1&gclid=Cj0KCQjw0_WyBhDMARIsAL1Vz8sORLeZ7WHx17ERV4PEtNNJIAHng_XRVr-YCxcFQBTYjaUnG4qa4AYaAoSOEALw_wcB&gclsrc=aw.ds "
+                target="_blank "><img class="icons " src="images/linkden.png "></a>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="js/script.js "></script>
+
+</html>
