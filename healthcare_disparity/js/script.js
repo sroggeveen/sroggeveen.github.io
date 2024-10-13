@@ -1,6 +1,3 @@
-//code sourced from https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/
-//figured the rest out myself
-
 const hSections = document.querySelectorAll('.horizontal-section');
 
 const scrollAmount = 80;

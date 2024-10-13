@@ -315,7 +315,6 @@
         border: #8693AB solid 3px;
         width: 100%;
     }
-    /*code sourced from https://devdesignfun.com/article/create-horizontal-scroll-section-html-css-js/*/
     
     .horizontal-section {
         display: flex !important;
@@ -328,7 +327,6 @@
     .horizontal-section::-webkit-scrollbar {
         display: none;
     }
-    /*end code source*/
     
     .nav-grid {
         display: grid;
